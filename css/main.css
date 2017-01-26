@@ -1,0 +1,46 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+/* --------------------
+Current Weather Information */
+.user-content {
+margin-top: 50px;
+}
+
+.temp-button {
+  cursor: pointer;
+}
+
+.url-image:not([src]){ 
+  display:none; 
+}
+
+/* ------------------------
+Forecast toggle button */
+button {
+  margin-top: 25px;
+}
+
+/* -----------------------
+Forecast info when displayed */
+.forecast {
+  display: none;
+  margin-top: 30px;
+  margin-bottom: 25%;
+}
+
+/* ----------------------
+Footer */
+.foot-container {
+  margin-top: 30px;
+}
+
+.foot-container a {
+  text-decoration: none;
+}
+
+#divider {
+font-size: 1.5em;
+}

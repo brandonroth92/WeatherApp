@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <title>Local Weather Application</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    
+    <div class="container"> <!-- bootstrap container -->
+
+      <header>
+        <div class = "name text-center">
+          <h1>Your Local WeatherAPP</h1>
+        </div> <!-- name -->  
+      </header>
+    
+      <!-- holds user location info, current weather description, and image -->
+      <section class = "weather">
+        <div class = "user-content text-center">
+          <h3>Here is the weather for <span id = "location"></span>:</h3><br>
+          <h4><strong>Date: </strong><span id = "userDate"></span></h4><br>
+          <h4><strong>Temperature: </strong><span id = "user-temp"></span>&#176; <a class= "temp-button" style="text-decoration: none">F</a></h4><br>
+          <h4><strong>Weather Description: </strong><span id = "description"></span></h4><br>
+          <img class="url-image" height="100" width="100">
+        </div> <!-- user content -->
+      </section> <!-- weather section -->
+      
+      <!-- toggles forecast display property -->
+      <div class="text-center">
+        <button class="btn btn-primary btn-sm">Forecasts</button>
+      </div>
+
+      <!-- forecast info columns when dispalyed -->      
+      <div class = "forecast center-block text-center">
+          <div class="col col-xs-3">
+              <p class="date"></p>
+              <p class="temp"></p>
+              <img class="fimg img-responsive  center-block">
+              <p class="description"></p>
+          </div>
+          <div class="col col-xs-3">
+              <p class="date"></p>
+              <p class="temp"></p>
+              <img class="fimg img-responsive center-block">
+              <p class="description"></p>                    
+          </div>
+          <div class="col col-xs-3">
+              <p class="date"></p>
+              <p class="temp"></p>
+              <img class="fimg img-responsive center-block">
+              <p class="description"></p>                    
+          </div>            
+          <div class="col col-xs-3">
+              <p class="date"></p>
+              <p class="temp"></p>
+              <img class="fimg img-responsive center-block">
+              <p class="description"></p>                    
+          </div>        
+      </div>
+    
+      <footer>
+        <div class = "foot-container text-center">
+          <div class = "footer-above">
+             <p>by <a href="#">brandon roth</a></p>
+          </div> <!-- footer-above -->
+          <div class="footer-below">
+              <p>Weather by <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap API</a> <span id = "divider">|  
+                </span>Location by <a href="http://ip-api.com" target="_blank">www.ip-api.com</a></p>
+          </div> <!-- footer below -->
+        </div> <!-- footer -->  
+      </footer>
+      
+    </div> <!-- bootstrap container -->
+  <!-- jQuery -->  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- main js file -->
+  <script src="js/main.js"></script>
+  </body>
+</html>  
